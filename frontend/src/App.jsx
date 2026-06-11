@@ -1,4 +1,5 @@
 import React from 'react';
+import Something from "./doesNotExist";
 
 const App = () => {
   return (
