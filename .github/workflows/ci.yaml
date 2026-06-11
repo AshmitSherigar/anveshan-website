@@ -5,10 +5,8 @@ on:
     branches:
       - main
 
-  push:
-    branches:
-      - main
-
+permissions:
+   contents: read
 
 jobs:
   frontend:
@@ -24,8 +22,9 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
-
+        uses: actions/setup-node@COMMIT_SHA  # v4
+        with:
+            persist-credentials: false
 
       - name: Setup Node
         uses: actions/setup-node@v4
