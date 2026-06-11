@@ -1,7 +1,7 @@
 import React from 'react';
-import Something from "./doesNotExist";
 
 const App = () => {
+  const hello="bad format"
   return (
     <div className="flex flex-col items-center justify-center w-full h-screen">
       <h1 className="text-6xl">Anveshan Website</h1>
