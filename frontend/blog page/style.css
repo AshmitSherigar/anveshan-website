@@ -10,3 +10,11 @@
   --dark-lilac: #655bc4;
   --shadow: 0 20px 55px rgba(44, 38, 91, 0.1);
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
