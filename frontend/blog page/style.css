@@ -1,0 +1,12 @@
+:root {
+  --ink: #1f2033;
+  --muted: #74758a;
+  --line: #e8e7ef;
+  --paper: #fbfafc;
+  --white: #ffffff;
+  --lilac: #8d83e9;
+  --lilac-light: #eeecff;
+  --peach: #f4b79d;
+  --dark-lilac: #655bc4;
+  --shadow: 0 20px 55px rgba(44, 38, 91, 0.1);
+}
