@@ -65,3 +65,34 @@ button {
   gap: 32px;
 }
 
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.brand-mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 11px;
+  color: var(--white);
+  background: var(--ink);
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  font-style: italic;
+  font-weight: 700;
+  box-shadow: 4px 4px 0 var(--peach);
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  margin-left: 70px;
+}
+
