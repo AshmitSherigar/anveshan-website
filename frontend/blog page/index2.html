@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anveshan is a thoughtful journal about artificial intelligence, machine learning, and the future of technology."
+    />
+    <title>Blog Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+</head>
+<body>
+     <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#" aria-label="Anveshan home">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>Anveshan</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+          <a class="active" href="#latest">Latest</a>
+          <a href="#topics">Topics</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-actions">
+          <label class="search" for="search-input">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m21 21-4.35-4.35m1.6-5.4a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+            </svg>
+            <input id="search-input" type="search" placeholder="Search stories" autocomplete="off" />
+          </label>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+            <span class="sr-only">Open menu</span>
+          </button>
+        </div>
+      </div>
+
+      <nav id="mobile-menu" class="mobile-menu container" aria-label="Mobile navigation">
+        <a class="active" href="#latest">Latest</a>
+        <a href="#topics">Topics</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+     <main>
+      <section class="hero container" id="about">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> The Anveshan journal</p>
+          <h1>Ideas that make<br /><em>intelligence</em> human.</h1>
+          <p class="hero-intro">
+            Clear, curious writing about the technology shaping how we think, create, and connect.
+          </p>
+          <a class="text-link" href="#latest">Explore the journal <span aria-hidden="true">↘</span></a>
+        </div>
+
+        <div class="hero-note" aria-label="Journal introduction">
+          <span class="note-number">01</span>
+          <p>
+            Anveshan means <strong>exploration</strong>. We look past the buzzwords to find the
+            ideas worth keeping.
+          </p>
+          <span class="note-line"></span>
+        </div>
+      </section>
+
+      <section class="featured container" aria-labelledby="featured-title">
+        <div class="featured-image image-cnn" role="img" aria-label="Abstract neural network lights"></div>
+        <div class="featured-content">
+          <div class="article-meta">
+            <span class="tag tag-lilac">FEATURED</span>
+            <span>6 min read</span>
+          </div>
+          <h2 id="featured-title">Getting <span>Started</span> with CNNs</h2>
+          <p>
+            A friendly introduction to the systems that help machines see the world, one visual
+            pattern at a time.
+          </p>
+          <div class="article-byline">
+            <span class="avatar">AS</span>
+            <span>By <strong>Anish S</strong></span>
+            <span class="separator">•</span>
+            <time datetime="2025-07-15">Jul 15, 2025</time>
+          </div>
+          <button class="arrow-link" id="featured-read" type="button">
+            Read story <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="latest container" id="latest" aria-labelledby="latest-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The library</p>
+            <h2 id="latest-title">Latest <em>stories</em></h2>
+          </div>
+          <p class="story-count"><span id="visible-count">5</span> stories to explore</p>
+        </div>
+
+        <div class="topic-bar" id="topics" aria-label="Filter stories by topic">
+          <button class="topic-filter active" type="button" data-filter="all">All stories</button>
+          <button class="topic-filter" type="button" data-filter="ai">Artificial intelligence</button>
+          <button class="topic-filter" type="button" data-filter="vision">Computer vision</button>
+          <button class="topic-filter" type="button" data-filter="culture">Culture &amp; ethics</button>
+        </div>
+
+        <div class="story-grid" id="story-grid">
+          <article class="story-card" data-topics="vision ai">
+            <a class="story-image image-vision" href="#" aria-label="Read Computer Vision Insights"></a>
+            <div class="story-body">
+              <div class="article-meta"><span class="tag">COMPUTER VISION</span><span>4 min read</span></div>
+              <h3><a href="#">Computer Vision <span>Insights</span></a></h3>
+              <p>How AI systems learn to analyze and interpret the visual world around us.</p>
+              <div class="card-footer"><time datetime="2025-07-15">Jul 15, 2025</time><a href="#" class="card-arrow" aria-label="Read Computer Vision Insights">↗</a></div>
+            </div>
+          </article>
+
+          <article class="story-card" data-topics="ai">
+            <a class="story-image image-nlp" href="#" aria-label="Read NLP in AI"></a>
+            <div class="story-body">
+              <div class="article-meta"><span class="tag">NATURAL LANGUAGE</span><span>5 min read</span></div>
+              <h3><a href="#">NLP <span>in AI</span></a></h3>
+              <p>Discover how machines understand and process the language we use every day.</p>
+              <div class="card-footer"><time datetime="2025-07-12">Jul 12, 2025</time><a href="#" class="card-arrow" aria-label="Read NLP in AI">↗</a></div>
+            </div>
+          </article>
+
+          <article class="story-card" data-topics="ai">
+            <a class="story-image image-gaming" href="#" aria-label="Read AI in Gaming"></a>
+            <div class="story-body">
+              <div class="article-meta"><span class="tag">AI &amp; CREATIVITY</span><span>3 min read</span></div>
+              <h3><a href="#">AI <span>in Gaming</span></a></h3>
+              <p>From adaptive worlds to smarter opponents, AI is changing how games feel.</p>
+              <div class="card-footer"><time datetime="2025-07-09">Jul 09, 2025</time><a href="#" class="card-arrow" aria-label="Read AI in Gaming">↗</a></div>
+            </div>
+          </article>
+
+          <article class="story-card" data-topics="ai">
+            <a class="story-image image-chatgpt" href="#" aria-label="Read How ChatGPT Works"></a>
+            <div class="story-body">
+              <div class="article-meta"><span class="tag">LARGE LANGUAGE MODELS</span><span>6 min read</span></div>
+              <h3><a href="#">How <span>ChatGPT</span> Works</a></h3>
+              <p>A simple look at how language models turn patterns into human-like responses.</p>
+              <div class="card-footer"><time datetime="2025-07-05">Jul 05, 2025</time><a href="#" class="card-arrow" aria-label="Read How ChatGPT Works">↗</a></div>
+            </div>
+          </article>
+
+          <article class="story-card" data-topics="culture ai">
+            <a class="story-image image-ethics" href="#" aria-label="Read Ethics in AI"></a>
+            <div class="story-body">
+              <div class="article-meta"><span class="tag">CULTURE &amp; ETHICS</span><span>5 min read</span></div>
+              <h3><a href="#">Ethics <span>in AI</span></a></h3>
+              <p>Why fairness and responsibility belong in every conversation about intelligent systems.</p>
+              <div class="card-footer"><time datetime="2025-07-02">Jul 02, 2025</time><a href="#" class="card-arrow" aria-label="Read Ethics in AI">↗</a></div>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="empty-state" hidden>
+          <span>⌕</span>
+          <h3>No stories found</h3>
+          <p>Try another keyword or choose a different topic.</p>
+        </div>
+      </section>
+
+      <dialog class="article-dialog" id="article-dialog">
+        <div class="article-dialog-inner">
+          <button class="dialog-close" id="dialog-close" type="button" aria-label="Close article">
+            ×
+          </button>
+
+          <p class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Featured story · 6 min read
+          </p>
+
+          <h2>Getting <em>Started</em> with CNNs</h2>
+
+          <div class="dialog-byline">
+            <span class="avatar">AS</span>
+            <span>By <strong>Anish S</strong> · Jul 15, 2025</span>
+          </div>
+
+          <div class="article-copy">
+            <p class="article-lead">
+              Convolutional Neural Networks, or CNNs, are one of the most
+              important ideas behind modern computer vision.
+            </p>
+
+            <p>
+              Instead of looking at every pixel independently, a CNN learns
+              small visual patterns such as edges, shapes, and textures. It
+              then combines those patterns layer by layer to understand more
+              complex objects.
+            </p>
+
+            <h3>How does a CNN see?</h3>
+
+            <p>
+              The first layers usually detect simple details. Deeper layers
+              combine those details into meaningful features, allowing the
+              network to recognize things like faces, vehicles, or handwritten
+              numbers.
+            </p>
+
+            <p>
+              This is what makes CNNs useful for image classification, object
+              detection, medical imaging, and many other visual tasks.
+            </p>
+
+            <h3>The simple idea</h3>
+
+            <p>
+              A CNN does not understand an image the way a person does. It
+              learns a hierarchy of patterns from examples. With enough useful
+              training data, those patterns become a powerful way to turn
+              pixels into predictions.
+            </p>
+          </div>
+        </div>
+      </dialog>
+    </main>
+    
+     <footer class="site-footer">
+      <div class="container footer-wrap">
+        <a class="brand" href="#" aria-label="Anveshan home">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>Anveshan</span>
+        </a>
+        <p>Stay curious. Keep exploring.</p>
+        <p class="footer-copy">© <span id="year"></span> Anveshan Journal</p>
+      </div>
+    </footer>
+
+</body>
+</html>
