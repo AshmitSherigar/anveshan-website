@@ -1,11 +1,21 @@
-import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import AppLayout from './components/AppLayout.jsx';
+import AboutPage from './pages/AboutPage.jsx';
+import HomePage from './pages/HomePage.jsx';
+import NotFoundPage from './pages/NotFoundPage.jsx';
 
 const App = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full h-screen">
-      <h1 className="text-6xl">Anveshan Website</h1>
-      <p className="text-2xl">Under Construction</p>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<AppLayout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="*" element={<NotFoundPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 
